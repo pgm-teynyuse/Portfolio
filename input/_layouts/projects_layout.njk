@@ -1,0 +1,9 @@
+{% extends "./base.njk" %}
+
+{% block header %}
+   {% include "../_partials/_banner_page.njk" %}
+{% endblock header %}
+
+{% block main %}
+   {{ content | safe }}
+{% endblock main %}

@@ -1,0 +1,26 @@
+[
+   {
+      "name": "HTML",
+      "icon": "icon-_html.svg"
+   },
+   {
+      "name": "CSS",
+      "icon": "icon-_css.svg"
+   },
+   {
+      "name": "JavaScript",
+      "icon": "icon-_javascript.svg"
+   },
+   {
+      "name": "Sass",
+      "icon": "icon-_sass.svg"
+   },
+      {
+      "name": "Eleventy",
+      "icon": "icon-_eleventy.svg"
+   },
+   {
+      "name": "Adobe Creative Cloud",
+      "icon": "icon-_adobe.svg"
+   }
+]

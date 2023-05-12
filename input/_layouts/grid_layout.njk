@@ -1,0 +1,36 @@
+{% extends "./base.njk" %}
+
+
+{% block main %}
+
+   {% block top %}
+      {% include "../_partials/_banner_page.njk" %}
+   {% endblock top %}
+
+      <div class="columns">
+         <div class="columns__column">
+            {% block left %}
+            {% endblock left %}
+
+            {% block left_bottom %}
+            {% endblock left_bottom %}
+         </div>
+
+         <div class="columns__column">
+            {% block right %}
+               {% if image %}
+               <div class="image_about">
+                  <img src="/img/{{ image }}" alt="{{ image }}" />
+               </div>
+               {% endif %}
+            {% endblock right %}
+            
+            {% block right_bottom %}
+            {% endblock right_bottom %}
+         </div>
+      </div>
+
+   {% block bottom %}
+   {% endblock bottom %}
+
+{% endblock main %}

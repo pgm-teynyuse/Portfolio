@@ -1,0 +1,17 @@
+<nav class="nav_bar">
+   <ul class="menu_list">
+      {% for nav_item in collections.nav %}
+      <li class="menu__item">
+         <a class="menu_link {% if page.url == nav_item.page.url  %} {% endif %}"
+            href="{{ nav_item.page.url }}">
+            {% if nav_item.data.nav %}
+            {{ nav_item.data.nav }}
+            {% else %}
+            {{ nav_item.data.title }}
+            {% endif %}
+         </a>
+      </li>
+      {% endfor %}
+   </ul>
+</nav>
+</div>

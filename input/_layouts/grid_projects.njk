@@ -1,0 +1,30 @@
+{% extends "./base.njk" %}
+
+{% block main %}
+      {% include "../_partials/_banner_page.njk" %}
+<div class="container_projects">
+   <div class="card">
+      <ul>
+         {% for item in collections[iterator] %}
+         <li>
+            <div class="card-grid">
+               <a href="{{ item.page.url }}">
+                  <div class="card">
+                     <img src="/img/{{ item.data.image }}" alt="{{ item.data.title}}">
+                     <div class="card-content">
+                        <h3>{{ item.data.title | safe }} {{ item.data.date}}</h3>
+                        <p>{{ item.data.description }}</p>
+                     </div>
+                  </div>
+               </a>
+            </div>
+         </li>
+         {% endfor %}
+      </ul>
+   </div>
+</div>
+{% endblock main %}
+
+
+
+

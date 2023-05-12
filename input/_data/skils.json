@@ -1,0 +1,17 @@
+[
+   {
+      "service": "Web Ontwikkeling",
+      "icon": "webdesign.svg",
+      "info": "Als webdesigner ben ik gepassioneerd om visueel aantrekkelijke en gebruiksvriendelijke websites te creëren die een blijvende indruk achterlaten bij de bezoekers."
+   },
+   {
+      "service": "Logo Ontwerpen",
+      "icon": "logodesign.svg",
+      "info": "Ik heb ook een passie voor het creëren van onderscheidende en effectieve logo's die een blijvende indruk maken bij degenen die ze zien."
+   },
+   {
+      "service": "Volledige Huisstijl",
+      "icon": "branding.svg",
+      "info": "Als huisstijlontwerper zet ik me volledig in voor het creëren van unieke, coherente visuele identiteiten die de aandacht trekt van iedereen die ermee in aanraking komt."
+   }
+]

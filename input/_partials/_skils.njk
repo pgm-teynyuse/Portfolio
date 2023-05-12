@@ -1,0 +1,11 @@
+<div class="skills_container">
+<ul>
+{% for skill in skils %}
+<li class="social_item">
+      <img class="skill" src="./icons/{{ skill.icon }}" alt="{{ skill.name }}">
+      <h3>{{ skill.service }}</h3>
+      <p>{{ skill.info }}</p>
+</li>
+{% endfor %}
+</ul>
+</div>

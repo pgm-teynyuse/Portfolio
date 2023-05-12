@@ -1,0 +1,11 @@
+<div class="social_media">
+   <ul>
+      {% for social in socials %}
+      <li class="social_item">
+         <a target="_blank" class="social_link" href="{{ social.url }}">
+            <img src="/icons/{{ social.icon }}" alt="{{ social.name }}">
+         </a>
+      </li>
+      {% endfor %}
+   </ul>
+</div>

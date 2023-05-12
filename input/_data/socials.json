@@ -1,0 +1,17 @@
+[
+   {
+      "name": "Instagram",
+      "icon": "instagram.svg",
+      "url": "https://www.instagram.com/tydsgns/"
+   },
+   {
+      "name": "Linkedin",
+      "icon": "linkedin.svg",
+      "url": "https://www.linkedin.com/in/teynuryuseinov/"
+   },
+   {
+      "name": "GitHub",
+      "icon": "github.svg",
+      "url": "https://github.com/pgm-teynyuse"
+   }
+]
