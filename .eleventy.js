@@ -17,7 +17,7 @@ eleventyConfig.addShortcode('currentYear', getCurrentYear);
 return {
             dir: {
             input: './input/pages/',
-            output: 'output',
+            output: '_site',
             includes: '../_partials',
             layouts: '../_layouts',
             data: '../_data',
