@@ -744,3 +744,29 @@ textarea:hover {
    margin-top: -5rem;
    padding: 1rem;
 }
+
+.article_project{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+      & img {
+      width: 26rem;
+      margin: 0.5rem;
+      transition: transform .5s;
+      animation: transitionCard 2s;
+   }
+      & img:hover {
+         transform: scale(1.05);
+         transition: transform .5s;
+   }
+      & p{
+         width: 80rem;
+         display: flex;
+         justify-content: center;
+         font-family: 'FuturaMEdium';
+         line-height: 1.4rem;
+         animation: transitionCard 1s;
+   }
+}
+

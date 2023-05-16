@@ -5,7 +5,11 @@
 {% endblock header %}
 
 {% block main %}
+   {% block top %}
+   {% endblock top %}
+   
    <div class="article_project">
       {{ content | safe }}
    </div>
+
 {% endblock main %}
