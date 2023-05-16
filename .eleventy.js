@@ -1,3 +1,15 @@
+const sort = (arr) => {
+      const sortedArray = arr.sort((a, b) => {
+            return a.data.nav.order - b.data.nav.order;
+      });
+
+      return sortedArray;
+};
+
+const getCurrentYear = () => {
+      return new Date().getFullYear();
+}
+
 module.exports = (eleventyConfig) => {
       eleventyConfig.addPassthroughCopy({
             'input/assets/styles/dist/': 'styles/',
@@ -8,11 +20,9 @@ module.exports = (eleventyConfig) => {
 });
 
 
-const getCurrentYear = () => {
-      return new Date().getFullYear();
-}
 
 eleventyConfig.addShortcode('currentYear', getCurrentYear);
+eleventyConfig.addFilter('sortByOrder', sort);
 
 return {
             dir: {
