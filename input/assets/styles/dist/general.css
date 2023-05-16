@@ -398,6 +398,10 @@ nav.nav_bar ul li a:hover:after {
    overflow: hidden;
 }
 
+.card li{
+      animation: transitionCard 2s;
+}
+
 .card img {
    width: 100%;
    height: auto;
