@@ -76,6 +76,16 @@ main{
    display: none;
 }
 
+.items_nav{
+   display: flex;
+   align-items: center;
+   padding: 0.1rem;
+}
+
+.social_nav{
+   position: absolute;
+   left: 1rem;
+}
 
 nav{
    width: 80%;
@@ -98,8 +108,69 @@ nav{
       color: rgb(255, 255, 255);
       font-size:1.1rem;
    }
-   
 }
+
+@media (max-width: 768px) {
+   body{
+      max-width: 768px;
+   }
+   .menu_list{
+      display: flex;
+      flex-direction: row;
+      & a{
+         margin: 1rem;
+      }
+   }
+   nav{
+      width: 50%;
+   }
+   }
+   .social_nav {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      left: 0rem;
+      margin-top: -2rem;
+   }
+   .items_nav {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      align-items: center;
+      padding: 0rem;
+   }
+   .banner_image{
+      display: none;
+   }
+   span{
+      font-size: 1rem;
+   }
+   .social_link img {
+      width: 0.5rem;
+   }
+
+@media (max-width: 768px) {
+   main{
+      display: block;
+      & .tech_container {
+         & ul{
+            display: block;
+            flex-direction: column;
+         }
+      }
+      & .skills_container{
+         display: block;
+      }
+      & .container_projects{
+         & ul{
+            grid-template-columns: none;
+         }
+      }
+   }
+}
+
 
 .footer_text{
    display: flex;
@@ -128,6 +199,9 @@ nav ul li a:hover {
 }
 
 nav.nav_bar ul li a{
+   display: flex;
+   justify-content: center;
+   align-items: center;
    position: relative;
 }
 
@@ -249,6 +323,25 @@ nav.nav_bar ul li a:hover:after {
    transition: transform .5s;
 }
 
+.tech h2{
+   opacity: 0;
+   margin-top: 1rem;
+   font-size: 0.5rem;
+   transition: opacity 0.3s ease;
+   color: white;
+}
+
+.tech:hover h2{
+   opacity: 1;
+   transition: opacity 0.3s ease;
+}
+
+.tech{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
 
 .social_media {
       & ul {
@@ -270,6 +363,7 @@ nav.nav_bar ul li a:hover:after {
 /*Skills*/
 .skill,
 .social_link img {
+   width: 1.5rem;
    filter: invert(1);
    transition: all 0.3s;
    animation: transitionCard 2s;
@@ -285,6 +379,7 @@ nav.nav_bar ul li a:hover:after {
 }
 .tech_container{
    display: flex;
+   flex-direction: row;
    justify-content: center;
    & ul{
       list-style: none;
@@ -566,7 +661,6 @@ article{
    font-family: 'FuturaLight_italic';
    font-size: 2em;
    color: white;
-   animation: flicker 3s infinite;
 }
 
 /*form*/

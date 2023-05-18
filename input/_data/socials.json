@@ -1,8 +1,8 @@
 [
    {
-      "name": "Instagram",
-      "icon": "instagram.svg",
-      "url": "https://www.instagram.com/tydsgns/"
+      "name": "GitHub",
+      "icon": "github.svg",
+      "url": "https://github.com/pgm-teynyuse"
    },
    {
       "name": "Linkedin",
@@ -10,8 +10,13 @@
       "url": "https://www.linkedin.com/in/teynuryuseinov/"
    },
    {
-      "name": "GitHub",
-      "icon": "github.svg",
-      "url": "https://github.com/pgm-teynyuse"
+      "name": "Whatsapp",
+      "icon": "whatsapp.svg",
+      "url": "https://api.whatsapp.com/send/?phone=32479063416&text&type=phone_number&app_absent=0"
+   },
+   {
+      "name": "Instagram",
+      "icon": "instagram.svg",
+      "url": "https://www.instagram.com/tydsgns/"
    }
 ]

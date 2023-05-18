@@ -1,13 +1,16 @@
-<nav class="nav_bar">
-   <ul class="menu_list">
-      {# sort(false, false, 'data.nav.order') #}
-      {% for nav_item in collections.nav | sortByOrder %}
-      <li class="menu__item">
-         <a class="menu__link {% if page.url == nav_item.page.url %} {% endif %}"
-            href="{{ nav_item.page.url }}">
-            {{ nav_item.data.nav.title }}
-         </a>
-      </li>
-      {% endfor %}
-   </ul>
-</nav>
+<div class="items_nav">
+   <nav class="nav_bar">
+      <ul class="menu_list">
+         {% for nav_item in collections.nav | sortByOrder %}
+         <li class="menu__item">
+            <a class="menu__link {% if page.url == nav_item.page.url %} {% endif %}" href="{{ nav_item.page.url }}">
+               {{ nav_item.data.nav.title }}
+            </a>
+         </li>
+         {% endfor %}
+      </ul>
+   </nav>
+   <div class="social_nav">
+   {% include "../_partials/_social_media.njk" %}
+   </div>
+</div>
