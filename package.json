@@ -7,7 +7,7 @@
     "build": "eleventy",
     "start": "npx @11ty/eleventy",
     "watch": "npx @11ty/eleventy --serve",
-    "build:postcss": "npx postcss styles/*.css --dir styles/dist --watch"
+    "css": "npx postcss styles/*.css --dir styles/dist --watch"
   },
   "repository": {
     "type": "git",

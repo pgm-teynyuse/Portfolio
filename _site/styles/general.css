@@ -76,14 +76,10 @@ main{
    display: none;
 }
 
-.items_nav{
-   display: flex;
-   align-items: center;
-   padding: 0.1rem;
-}
 
 .social_nav{
    position: absolute;
+   top: 1rem;
    left: 1rem;
 }
 
@@ -113,6 +109,20 @@ nav{
 @media (max-width: 768px) {
    body{
       max-width: 768px;
+      & span {
+            font-size: 1.7rem;
+         }
+      & .social_nav {
+         position: relative;
+         top: 0rem;
+         left: 0rem;
+      }
+      & .items_nav{
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+         align-items: center;
+      }
    }
    .menu_list{
       display: flex;
@@ -124,28 +134,11 @@ nav{
    nav{
       width: 50%;
    }
+   .banner_items{
+      & img {
+            display: none;
+         }
    }
-   .social_nav {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      position: relative;
-      left: 0rem;
-      margin-top: -2rem;
-   }
-   .items_nav {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-direction: column;
-      align-items: center;
-      padding: 0rem;
-   }
-   .banner_image{
-      display: none;
-   }
-   span{
-      font-size: 1rem;
    }
    .social_link img {
       width: 0.5rem;
@@ -155,19 +148,52 @@ nav{
    main{
       display: block;
       & .tech_container {
-         & ul{
-            display: block;
-            flex-direction: column;
-         }
+         margin-top: 2rem;
+         & .grid_container {
+               display: grid;
+               grid-template-columns: repeat(2, 1fr);
+               grid-gap: 10px;
+            }
       }
       & .skills_container{
          display: block;
+         & ul{
+            padding: 1rem;
+            & li{
+               margin-bottom: 2rem;
+            }
+         }
+
       }
       & .container_projects{
          & ul{
             grid-template-columns: none;
          }
       }
+   }
+}
+
+@media (max-width: 768px) {
+   main{
+.columns {
+   display: flex;
+   flex-direction: column;
+   grid-template-columns: repeat(1, 1fr);
+   padding: 1rem;
+   margin: 0 auto;
+   margin-top: 5rem;
+   width: 1420px;
+   & .text_about_right{
+            width: 20rem;
+      margin-left: 4rem;
+   }
+   & .text_about{
+      width: 20rem;
+   }
+   & .image_about{
+      width: 25%;
+   }
+}
    }
 }
 
@@ -195,15 +221,10 @@ nav ul li a:before {
 }
 
 nav ul li a:hover {
+   position: relative;
    color: #8d8d8d;
 }
 
-nav.nav_bar ul li a{
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   position: relative;
-}
 
 nav.nav_bar ul li a:after{
    position: absolute;
@@ -220,6 +241,10 @@ nav.nav_bar ul li a:after{
 
 nav.nav_bar ul li a:hover:after {
    width: 100%;
+}
+
+span{
+   font-size: 4rem;
 }
 
 /*Banner*/
