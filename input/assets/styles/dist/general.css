@@ -682,10 +682,19 @@ article{
 
 
 .desc_page{
+   text-decoration: none;
    text-align: center;
    font-family: 'FuturaLight_italic';
    font-size: 2em;
    color: white;
+}
+
+.link_page {
+   text-decoration: none;
+   text-align: center;
+   font-family: 'FuturaLight_italic';
+   font-size: 0.8em;
+   color: rgb(21, 21, 180);
 }
 
 /*form*/
@@ -873,6 +882,7 @@ textarea:hover {
    flex-direction: column;
    justify-content: center;
    align-items: center;
+   margin-top: 3rem;
       & img {
       width: 26rem;
       margin: 0.5rem;

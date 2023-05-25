@@ -1,11 +1,14 @@
 {% if page.url == "/about/" or page.url == "/contact/" %}
-   <div class="banner_detail">
-      <p class="desc_page"> {{description}} </p>
-   </div>
+<div class="banner_detail">
+   <p class="desc_page">{{ description }}</p>
+</div>
 {% else %}
-   <div class="banner_detail">
-      <h1 class="title_page"> {{title}} </h1>
-      <p class="desc_page"> {{description}} </p>
-      <p class="date_page"> {{date}} </p>
-   </div>
+<div class="banner_detail">
+   <h1 class="title_page">{{ title }}</h1>
+   <p class="desc_page">{{ description }}</p>
+      {% if link %}
+      <a class="link_page" target="_blank" href="{{ link }}">Link naar de <strong>GitHub</strong> Repository</a>
+      {% endif %}
+   <p class="date_page">{{ date }}</p>
+</div>
 {% endif %}
