@@ -1,6 +1,5 @@
 const toRotate = [
-   "Hey, ik ben Teynur Yuseinov!",
-   "Ik ben een Full-Stack Ontwikkelaar.",
+   "Hallo, ik ben Teynur Yuseinov!",
 ];
 
 const TxtType = function(el, toRotate, period) {

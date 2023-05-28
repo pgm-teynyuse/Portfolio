@@ -1,46 +1,53 @@
 ---
 nav: 
-      title: Over
+      title: Diensten
       order: 2
 tags: nav
-title: 'Over'
-image: about/teynur.jpg
-image2: about/teynur_about2.jpg
+title: 'Diensten'
 description: '"Voor mij is kwaliteit als een goede fles wijn, het verbetert met de tijd en is het beste wat je kunt krijgen"'
 ---
 
 {% extends "../_layouts/grid_layout.njk" %}
+{% include "../_partials/_technologies.njk" %}
 
+
+{% block top %}
+      {% include "../_partials/_banner_page.njk" %}
+      {% include "../_partials/_technologies.njk" %}
+{% endblock top %}
 
 {% block left %}
-<div class="about_left">
-<h1>Wie ben ik?</h1>
-      <p class="text_about">
-      Als kind was ik altijd al graag creatief bezig en ik heb deze passie kunnen omzetten naar een professionele carrière.
-      In 2022 ben ik afgestudeerd aan Viso Mariakerke als Grafisch Ontwerper en Allround Drukker, waar ik alle vaardigheden
-      en kennis heb opgedaan om mijzelf te ontwikkelen als professionele ontwerper.
-      </p> 
-      <p class="text_about_right">
-            Ik heb ervaring met het creëren van visueel aantrekkelijke ontwerpen voor verschillende
-            doeleinden, zoals drukwerk, digitale media en promotiemateriaal. Ik ben bekend met de nieuwste software en
-            technologieën in de grafische industrie en kan hiermee de beste resultaten behalen voor mijn klanten.
-      </p>
-      <p class="text_about">
-            Of het nu gaat om het ontwerpen van een nieuwe website, het opfrissen van een bestaande site of het maken van
-            digitale advertenties, ik kan mijn klanten helpen om hun online aanwezigheid te verbeteren. Ik werk nauw samen met
-            mijn
-            klanten om hun doelen en wensen te begrijpen.
-      </p>
-      <p class="text_about_right">
-            Kortom, ik ben een gepassioneerde creatieve professional met een brede kennis van grafisch ontwerp, drukwerk en
-            webdesign. Ik ben altijd op zoek naar nieuwe uitdagingen en mogelijkheden om mijn talenten te gebruiken en mijn
-            klanten tevreden te stellen.
-      </p>
-</div>
-{% endblock left %}
+<h2 class="service-heading">Grafisch ontwerp</h2>
+<ul class="service-list">
+<li class="service-item">Ontwikkeling van unieke huisstijlen voor diverse sectoren en doelgroepen.</li>
+<li class="service-item">Creatie van visuele identiteiten die de essentie van een bedrijf of individu weerspiegelen.</li>
+<li class="service-item">Communiceren van boodschappen op een effectieve en aantrekkelijke manier.</li>
+</ul>
+{% endblock left%}
+
+{% block left_bottom %}
+<h2 class="service-heading">Webontwikkeling</h2>
+<ul class="service-list">
+<li class="service-item">Programmeren met JavaScript om interactieve en responsieve gebruikersinterfaces te creëren.</li>
+<li class="service-item">Ervaring met bibliotheken zoals React en Sass voor het ontwikkelen van gebruiksvriendelijke webapplicaties.</li>
+<li class="service-item">Naadloze integratie van ontwerp en functionaliteit om een complete online ervaring te bieden.</li>
+</ul>
+{% endblock left_bottom %}
+
+{% block right %}
+<h2 class="service-heading">Internationale uitbreiding</h2>
+<ul class="service-list">
+<li class="service-item">Ambitie om je diensten internationaal aan te bieden en nieuwe markten te betreden.</li>
+<li class="service-item">Bereidheid om samen te werken met klanten en partners van over de hele wereld.</li>
+<li class="service-item">Openstaan voor het begrijpen van diverse culturele en zakelijke perspectieven.</li>
+</ul>
+{% endblock right %}
 
 {% block right_bottom %}
-<div class="about_left">
-
-</div>
+<h2 class="service-heading">Kennisdeling</h2>
+<ul class="service-list">
+<li class="service-item">Presenteren van je werk en expertise op conferenties en evenementen.</li>
+<li class="service-item">Schrijven van artikelen en blogposts om anderen te inspireren en informeren.</li>
+<li class="service-item">Actieve deelname aan de wereldwijde ontwerpgemeenschap door ideeën uit te wisselen en samen te werken.</li>
+</ul>
 {% endblock right_bottom %}

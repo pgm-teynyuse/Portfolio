@@ -7,7 +7,7 @@
     "build": "eleventy",
     "start": "npx @11ty/eleventy",
     "watch": "npx @11ty/eleventy --serve",
-    "css": "npx postcss styles/*.css --dir styles/dist --watch"
+    "css": "npx postcss input/assets/styles/*.css --dir input/assets/styles/dist --watch"
   },
   "repository": {
     "type": "git",
@@ -29,6 +29,7 @@
     "@11ty/eleventy": "^2.0.1",
     "cssnano": "^6.0.1",
     "postcss": "^8.4.23",
-    "postcss-cli": "^10.1.0"
+    "postcss-cli": "^10.1.0",
+    "postcss-nesting": "^11.2.2"
   }
 }

@@ -1,18 +1,24 @@
 [
-   {
-      "name": "GitHub",
-      "icon": "github.svg",
-      "url": "https://github.com/pgm-teynyuse"
-   },
+
    {
       "name": "Linkedin",
       "icon": "linkedin.svg",
       "url": "https://www.linkedin.com/in/teynuryuseinov/"
    },
    {
+      "name": "GitHub",
+      "icon": "github.svg",
+      "url": "https://github.com/pgm-teynyuse"
+   },
+   {
       "name": "Whatsapp",
       "icon": "whatsapp.svg",
       "url": "https://api.whatsapp.com/send/?phone=32479063416&text&type=phone_number&app_absent=0"
+   },
+   {
+      "name": "E-mail",
+      "icon": "mail.svg",
+      "url": "https://mail.google.com/mail/?view=cm&to=teynurzeynuryuseinov@gmail.com"
    },
    {
       "name": "Instagram",

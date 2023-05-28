@@ -1,16 +1,27 @@
 <div class="items_nav">
+   <div class="logo_nav">
+      <ul class="menu_list">
+         <li class="menu__item_logo">
+            <a href="/">
+               <strong><h3 class="hover-1">T</h3></strong>
+            </a>
+         </li>
+      </ul>
+   </div>
    <nav class="nav_bar">
       <ul class="menu_list">
          {% for nav_item in collections.nav | sortByOrder %}
-         <li class="menu__item">
-            <a class="menu__link {% if page.url == nav_item.page.url %} {% endif %}" href="{{ nav_item.page.url }}">
-               {{ nav_item.data.nav.title }}
-            </a>
-         </li>
+            {% if nav_item.data.title != 'Home' %}
+               <li class="menu__item">
+                  <a class="menu__link {% if page.url == nav_item.page.url %}active{% endif %}" href="{{ nav_item.page.url }}">
+                     {{ nav_item.data.nav.title }}
+                  </a>
+               </li>
+            {% endif %}
          {% endfor %}
       </ul>
    </nav>
    <div class="social_nav">
-   {% include "../_partials/_social_media.njk" %}
+      {% include "../_partials/_social_media.njk" %}
    </div>
 </div>
