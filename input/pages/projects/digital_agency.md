@@ -2,7 +2,7 @@
 title: Digitaal Bureau
 description: Studio T digitaal bureau website
 image: projects/digi_1.png
-link: https://pgm-teynyuse.github.io/DigitalAgency/
+link: https://github.com/pgm-teynyuse/DigitalAgency.git
 
 date: "2022"
 ---
