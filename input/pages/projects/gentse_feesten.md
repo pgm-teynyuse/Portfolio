@@ -2,14 +2,14 @@
 title: Gentse Feesten
 description: Gentse Feesten namaak project
 image: projects/gf_1.png
-link: https://github.com/pgm-teynyuse/DigitalAgency.git
+link: https://github.com/pgmgent-atwork-1/opdracht-2-gentse-feesten-2022-pgm-teynyuse
 
 date: "2023"
 ---
 
 
 ### Studio T: Digitaal bureau
-Deze website is volledig nagebouwd voor het vak Atwork 1. Het is pixels perfect nagebouwd.
+Deze website is volledig herbouwd voor mijn studie Atwork 1, waarbij ik HTML, CSS en JavaScript heb gebruikt voor een exacte replica, inclusief pixel-perfecte styling en interactieve functies. Dit project toont mijn toewijding aan detail en mijn webontwikkelingsvaardigheden.
 
 
 ![Gentse Feesten](/img/projects/gf_1.png)
