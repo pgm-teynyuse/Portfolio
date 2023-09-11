@@ -640,6 +640,7 @@ width: 100%;
 
 & .card li a {
 position: relative;
+color: transparent;
 }
 
 .card li a:hover 

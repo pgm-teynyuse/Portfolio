@@ -1,6 +1,7 @@
 ---
 title: Gentse Feesten
 description: Gentse Feesten namaak project
+order: 1
 image: projects/gf_1.png
 link: https://github.com/pgmgent-atwork-1/opdracht-2-gentse-feesten-2022-pgm-teynyuse
 

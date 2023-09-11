@@ -5,7 +5,8 @@
    <div class="container_projects">
    <div class="card">
       <ul>
-         {% for item in collections[iterator] %}
+         {% set reversedItems = collections[iterator] | reverse %}
+         {% for item in reversedItems %}
          <li>
             <div class="card-grid">
                <a href="{{ item.page.url }}">
@@ -24,7 +25,3 @@
    </div>
    </div>
 {% endblock main %}
-
-
-
-
